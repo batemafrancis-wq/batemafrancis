@@ -1,7 +1,7 @@
 /* =====================================================
-   BATEMA FRANCIS — Ocunex | script.js
+   BATEMA FRANCIS — Essence | script.js
    Slideshow · Scroll spy · Products · Testimonials ·
-   Contact form (sends to thironaugstine@gmail.com)
+   Contact form (sends to batemafrancis.com)
    ===================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -110,56 +110,76 @@ document.addEventListener('DOMContentLoaded', () => {
       </svg>`);
 
   const products = [
-    { tag: 'E-Commerce', title: 'KampalaMart — Online Store', emoji: '🛒', c1: '#2563eb', c2: '#7c3aed',
+    {
+      tag: 'E-Commerce', title: 'KampalaMart — Online Store', emoji: '🛒', c1: '#2563eb', c2: '#7c3aed',
       img: 'images/products/ecommerce.jpg',
       desc: 'A complete online shop with cart, mobile money payments and delivery tracking.',
       features: ['Product catalogue & search', 'MTN/Airtel Money checkout', 'Order & delivery tracking', 'Admin sales dashboard'],
-      impact: 'Boosted client sales by 65% in 6 months.' },
-    { tag: 'Education', title: 'SchoolHub — School Management', emoji: '🏫', c1: '#0ea5e9', c2: '#2563eb',
+      impact: 'Boosted client sales by 65% in 6 months.'
+    },
+    {
+      tag: 'Education', title: 'SchoolHub — School Management', emoji: '🏫', c1: '#0ea5e9', c2: '#2563eb',
       img: 'images/products/school.jpg',
       desc: 'Manages students, fees, report cards and parent communication in one place.',
       features: ['Student records & attendance', 'Fees billing & receipts', 'Auto report card generation', 'SMS alerts to parents'],
-      impact: 'Cut admin paperwork by 70% for a 1,200-student school.' },
-    { tag: 'Education', title: 'LibraSys — Library Management', emoji: '📚', c1: '#1e40af', c2: '#0891b2',
+      impact: 'Cut admin paperwork by 70% for a 1,200-student school.'
+    },
+    {
+      tag: 'Education', title: 'LibraSys — Library Management', emoji: '📚', c1: '#1e40af', c2: '#0891b2',
       img: 'images/products/library.jpg',
       desc: 'Tracks books, borrowers and returns with barcode scanning support.',
       features: ['Catalogue with barcode scan', 'Borrow/return tracking', 'Overdue reminders', 'Usage reports'],
-      impact: 'Reduced lost books by 80% at a university library.' },
-    { tag: 'Hospitality', title: 'DineEasy — Restaurant Website', emoji: '🍽️', c1: '#f59e0b', c2: '#dc2626',
+      impact: 'Reduced lost books by 80% at a university library.'
+    },
+    {
+      tag: 'Hospitality', title: 'DineEasy — Restaurant Website', emoji: '🍽️', c1: '#f59e0b', c2: '#dc2626',
       img: 'images/products/restaurant.jpg',
       desc: 'Digital menu, table reservations and online food ordering for restaurants.',
       features: ['QR digital menu', 'Table reservations', 'Online ordering', 'Customer reviews'],
-      impact: 'Doubled weekend bookings for a Kampala restaurant.' },
-    { tag: 'Wellness', title: 'SpaZen — Spa Booking System', emoji: '💆', c1: '#8b5cf6', c2: '#ec4899',
+      impact: 'Doubled weekend bookings for a Kampala restaurant.'
+    },
+    {
+      tag: 'Wellness', title: 'SpaZen — Spa Booking System', emoji: '💆', c1: '#8b5cf6', c2: '#ec4899',
       img: 'images/products/spa.jpg',
       desc: 'Elegant spa site with treatment menus and automated appointment booking.',
       features: ['Service & price menus', 'Online appointment booking', 'Staff scheduling', 'SMS reminders'],
-      impact: 'Cut no-shows by 45% with automatic reminders.' },
-    { tag: 'Beauty', title: 'Rajat Beauty Parlour', emoji: '💄', c1: '#ec4899', c2: '#f43f5e',
+      impact: 'Cut no-shows by 45% with automatic reminders.'
+    },
+    {
+      tag: 'Beauty', title: 'Rajat Beauty Parlour', emoji: '💄', c1: '#ec4899', c2: '#f43f5e',
       img: 'images/products/rajat.jpg',
       desc: 'A stylish salon website with gallery, services and instant WhatsApp booking.',
       features: ['Style gallery', 'Service price list', 'WhatsApp booking button', 'Google Maps directions'],
-      impact: 'New client walk-ins up 50% from online discovery.' },
-    { tag: 'Beauty', title: 'Uzuri Hair Salon', emoji: '💇', c1: '#a855f7', c2: '#6366f1',
+      impact: 'New client walk-ins up 50% from online discovery.'
+    },
+    {
+      tag: 'Beauty', title: 'Uzuri Hair Salon', emoji: '💇', c1: '#a855f7', c2: '#6366f1',
       img: 'images/products/uzuri.jpg',
       desc: 'Modern salon platform with stylist profiles and loyalty rewards.',
       features: ['Stylist profiles & booking', 'Loyalty points system', 'Before/after gallery', 'Mobile-first design'],
-      impact: 'Repeat bookings grew 40% with loyalty rewards.' },
-    { tag: 'Fitness', title: 'FitPro — Gym Membership', emoji: '🏋️', c1: '#16a34a', c2: '#0d9488',
+      impact: 'Repeat bookings grew 40% with loyalty rewards.'
+    },
+    {
+      tag: 'Fitness', title: 'FitPro — Gym Membership', emoji: '🏋️', c1: '#16a34a', c2: '#0d9488',
       img: 'images/products/gym.jpg',
       desc: 'Gym website with class timetables, membership signup and payments.',
       features: ['Class timetable', 'Online membership signup', 'Payment tracking', 'Trainer profiles'],
-      impact: 'Automated 90% of membership renewals.' },
-    { tag: 'Real Estate', title: 'HomeFinder — Property Listings', emoji: '🏠', c1: '#0284c7', c2: '#1d4ed8',
+      impact: 'Automated 90% of membership renewals.'
+    },
+    {
+      tag: 'Real Estate', title: 'HomeFinder — Property Listings', emoji: '🏠', c1: '#0284c7', c2: '#1d4ed8',
       img: 'images/products/realestate.jpg',
       desc: 'Property listing platform with photos, filters and agent contact.',
       features: ['Search by location & price', 'Photo galleries & maps', 'Agent inquiry forms', 'Featured listings'],
-      impact: 'Generated 300+ qualified leads in the first quarter.' },
-    { tag: 'Health', title: 'MediBook — Clinic Appointments', emoji: '🏥', c1: '#dc2626', c2: '#ea580c',
+      impact: 'Generated 300+ qualified leads in the first quarter.'
+    },
+    {
+      tag: 'Health', title: 'MediBook — Clinic Appointments', emoji: '🏥', c1: '#dc2626', c2: '#ea580c',
       img: 'images/products/clinic.jpg',
       desc: 'Clinic website where patients book appointments and get reminders.',
       features: ['Doctor schedules', 'Online appointment booking', 'Patient reminders', 'Secure records area'],
-      impact: 'Reduced phone-booking workload by 60%.' }
+      impact: 'Reduced phone-booking workload by 60%.'
+    }
   ];
 
   const grid = document.getElementById('productsGrid');
@@ -219,14 +239,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------------- Testimonials ---------------- */
   const testimonials = [
-    { name: 'Kutesa Mark', role: 'CEO, KampalaMart', stars: 5,
-      quote: 'Essence team has a strong attention to detail and a talented design and backend engineering team which helped build a product that was even better than I envisioned.' },
-    { name: 'Rajat Sharma', role: 'Owner, Rajat Beauty Parlour', stars: 5,
-      quote: 'Our salon website brought us so many new clients. Batema explained everything in simple terms and delivered on time. Highly recommended!' },
-    { name: 'Sarah Namutebi', role: 'Manager, Uzuri Hair Salon', stars: 5,
-      quote: 'The loyalty system Batema built keeps our customers coming back. Professional, patient and truly perfection-driven.' },
-    { name: 'Dr. James Okello', role: 'Director, MediBook Clinic', stars: 4,
-      quote: 'Patients now book online instead of calling all day. The system simply works — fast, secure and easy for our staff.' }
+    {
+      name: 'Kutesa Mark', role: 'CEO, KampalaMart', stars: 5,
+      quote: 'Essence team has a strong attention to detail and a talented design and backend engineering team which helped build a product that was even better than I envisioned.'
+    },
+    {
+      name: 'Rajat Sharma', role: 'Owner, Rajat Beauty Parlour', stars: 5,
+      quote: 'Our salon website brought us so many new clients. Batema explained everything in simple terms and delivered on time. Highly recommended!'
+    },
+    {
+      name: 'Sarah Namutebi', role: 'Manager, Uzuri Hair Salon', stars: 5,
+      quote: 'The loyalty system Batema built keeps our customers coming back. Professional, patient and truly perfection-driven.'
+    },
+    {
+      name: 'Dr. James Okello', role: 'Director, MediBook Clinic', stars: 4,
+      quote: 'Patients now book online instead of calling all day. The system simply works — fast, secure and easy for our staff.'
+    }
   ];
 
   const tGrid = document.getElementById('testimonialsGrid');
