@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/products/rajat.jpg',
       desc: 'A stylish salon website with gallery, services and instant WhatsApp booking.',
       features: ['Style gallery', 'Service price list', 'WhatsApp booking button', 'Google Maps directions'],
-      impact: 'New client walk-ins up 50% from online discovery.'
+      impact: 'New client walk-ins up 50% from online discovery.   link https://babyjat.vercel.app/'
     },
     {
       tag: 'Beauty', title: 'Uzuri Hair Salon', emoji: '💇', c1: '#a855f7', c2: '#6366f1',
